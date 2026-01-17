@@ -2,8 +2,7 @@
 
 1. **Create Private repo in DockerHub**
 
-![alt text](image.png)
-
+![alt text](Img/image.png)
 2. **Push the docker image to the private repo in DockerHub**
 
 ```
@@ -13,7 +12,7 @@ docker push rexxx9865/node-k8:v1.0.1
 
 3. **Verify**
 
-![alt text](image-1.png)
+![alt text](Img/image-1.png)
 
 4. **Create namespace in node**
 
@@ -23,11 +22,11 @@ kubectl create ns priv-docker
 
 5. **Create Secret in priv-docker namespace**
 
-![alt text]({84293C97-DCFC-4A2D-9D5F-93CA81189957}.png)
+![alt text](Img/{84293C97-DCFC-4A2D-9D5F-93CA81189957}.png)
 
 6. **Verify Secret**
 
-![alt text]({7D7836EB-88FA-4C1A-B70D-D9D4C7D0E02F}.png)
+![alt text](Img/{7D7836EB-88FA-4C1A-B70D-D9D4C7D0E02F}.png)
 
 7. **Create Deployment.yaml file**
 
@@ -77,7 +76,7 @@ spec:
 ```
 kubectl apply -f deployment.yaml
 ```
-![alt text]({34F18D9C-5BC6-448B-907E-C91D00BB4CC1}.png)
+![alt text](Img/{34F18D9C-5BC6-448B-907E-C91D00BB4CC1}.png)
 
 9. **Verfiy Deployment, Service and Replicaset**
 
@@ -87,7 +86,7 @@ kubectl -n priv-docker get service
 kubectl -n priv-docker get replicaset
 kubectl -n priv-docker get po
 ```
-![alt text]({7B8DBAC2-A623-45AA-9AA3-24D7436C9B1D}.png)
+![alt text](Img/{7B8DBAC2-A623-45AA-9AA3-24D7436C9B1D}.png)
 
 10. **Access the Application**
 
@@ -95,6 +94,6 @@ kubectl -n priv-docker get po
 minikube -n priv-docker service priv-service
 ```
 
-![alt text]({B9DADDA4-98EA-4547-B01E-25D585E6C524}.png)
+![alt text](Img/{B9DADDA4-98EA-4547-B01E-25D585E6C524}.png)
 
-![alt text](image-2.png)
+![alt text](Img/image-2.png)
