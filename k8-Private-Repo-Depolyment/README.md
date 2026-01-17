@@ -1,4 +1,4 @@
-# Deploy your own custom-built Docker Image from a private Container Registry as a K8s Deployment+Service
+# Task: Deploy your own custom-built Docker Image from a private Container Registry as a K8s Deployment+Service
 
 1. **Create Private repo in DockerHub**
 
